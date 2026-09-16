@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ALPHADEUTSCH – Deutsch lernen, Ausbildung starten und Zukunft in Marokko gestalten.">
+
+    <title>ALPHADEUTSCH | Bildung • Ausbildung • Zukunft</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome: real icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header" id="header">
+    <div class="container nav">
+
+        <a href="#start" class="brand">
+            <img src="assets/logo.jpeg" alt="ALPHADEUTSCH Logo">
+            <span>
+                ALPHADEUTSCH
+                <small data-i18n="brandTagline">BILDUNG • AUSBILDUNG • ZUKUNFT</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a class="active" href="#start" data-i18n="navStart">Startseite</a>
+            <a href="#ueber-uns" data-i18n="navAbout">Über uns</a>
+            <a href="#angebote" data-i18n="navOffers">Was wir machen</a>
+            <a href="#warum" data-i18n="navWhy">Warum wir</a>
+            <a href="#bewertungen" data-i18n="navReviews">Bewertungen</a>
+            <a href="#kontakt" data-i18n="navContact">Kontakt</a>
+
+            <!-- Language dropdown -->
+            <div class="language-switcher" id="languageSwitcher">
+                <button class="language-button" id="languageButton"
+                        type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="fi fi-de language-flag" id="currentFlag"></span>
+                    <span id="currentLanguage">DE</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button class="language-option active" type="button" data-lang="de">
+                        <span class="fi fi-de"></span>
+                        <span>Deutsch</span>
+                        <strong>DE</strong>
+                    </button>
+
+                    <button class="language-option" type="button" data-lang="fr">
+                        <span class="fi fi-fr"></span>
+                        <span>Français</span>
+                        <strong>FR</strong>
+                    </button>
+
+                    <button class="language-option" type="button" data-lang="en">
+                        <span class="fi fi-gb"></span>
+                        <span>English</span>
+                        <strong>EN</strong>
+                    </button>
+
+                    <button class="language-option" type="button" data-lang="ar">
+                        <span class="fi fi-ma"></span>
+                        <span>العربية</span>
+                        <strong>AR</strong>
+                    </button>
+                </div>
+            </div>
+
+            <a class="nav-cta" href="#kontakt" data-i18n="navCta">
+                Kontakt aufnehmen <i class="fa-solid fa-paper-plane"></i>
+            </a>
+
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="start">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-image">
+        <img src="assets/hero-image.png" alt="ALPHADEUTSCH">
+    </div>
+    <div class="container hero-content">
+        <div class="hero-copy">
+
+            <div class="eyebrow" data-i18n="heroEyebrow">
+                DEIN SPRUNGBRETT NACH Marokko
+            </div>
+
+            <h1 data-i18n-html="heroTitle">
+                Deutsch lernen.<br>
+                <em>Deine Zukunft</em><br>
+                in Marokko.
+            </h1>
+
+            <p data-i18n="heroText">
+                ALPHADEUTSCH ist dein zuverlässiges Bildungs- und Ausbildungszentrum.
+                Wir begleiten dich Schritt für Schritt – von der Sprachförderung bis zur
+                erfolgreichen Ausbildung in Marokko.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#kontakt" class="btn btn-gold">
+                    <span data-i18n="heroCta">Kontakt aufnehmen</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#ueber-uns" class="btn btn-outline">
+                    <span data-i18n="heroMore">Mehr über uns</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-points">
+                <span><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="heroPoint1">Deutsch lernen</span></span>
+                <span><i class="fa-solid fa-briefcase"></i> <span data-i18n="heroPoint2">Ausbildung finden</span></span>
+                <span><i class="fa-solid fa-star"></i> <span data-i18n="heroPoint3">Zukunft gestalten</span></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about section-dark" id="ueber-uns">
+    <div class="container about-grid">
+
+        <div class="about-copy">
+            <div class="eyebrow" data-i18n="aboutEyebrow">WER SIND WIR?</div>
+
+            <h2 data-i18n-html="aboutTitle">
+                ALPHADEUTSCH –<br>
+                <em>Bildung mit Perspektive</em>
+            </h2>
+
+            <p data-i18n="aboutText">
+                Wir sind ein modernes Bildungs- und Ausbildungszentrum mit Sitz in Marokko.
+                Unser Ziel ist es, Menschen aus aller Welt auf ihrem Weg in eine erfolgreiche
+                Zukunft zu begleiten – durch hochwertige Sprachkurse, praxisnahe Ausbildungen
+                und persönliche Beratung.
+            </p>
+
+            <a href="#angebote" class="text-link">
+                <span data-i18n="aboutLink">Mehr über uns</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="about-image">
+            <div class="building-placeholder">
+                <div class="building-sign">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+                <strong>ALPHADEUTSCH</strong>
+                <small data-i18n="buildingTagline">BILDUNG • AUSBILDUNG • ZUKUNFT</small>
+            </div>
+        </div>
+
+        <div class="about-values">
+
+            <div class="value">
+                <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div>
+                    <h3 data-i18n="visionTitle">Unsere Vision</h3>
+                    <p data-i18n="visionText">Mehr Chancen für eine bessere Zukunft.</p>
+                </div>
+            </div>
+
+            <div class="value">
+                <div class="icon"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <h3 data-i18n="missionTitle">Unsere Mission</h3>
+                    <p data-i18n="missionText">Menschen durch Bildung und Ausbildung stärken.</p>
+                </div>
+            </div>
+
+            <div class="value">
+                <div class="icon"><i class="fa-solid fa-gem"></i></div>
+                <div>
+                    <h3 data-i18n="valuesTitle">Unsere Werte</h3>
+                    <p data-i18n="valuesText">Vertrauen, Respekt, Kompetenz und Engagement.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="offers section-black" id="angebote">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow" data-i18n="offersEyebrow">WAS MACHEN WIR?</div>
+                <h2 data-i18n="offersTitle">Unsere Angebote</h2>
+                <br>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 data-i18n="service1Title">Deutschkurs</h3>
+                <p data-i18n="service1Text">
+                    Vom Anfänger bis zum Fortgeschrittenen – wir bringen dir Deutsch
+                    schnell, effektiv und praxisnah bei.
+                </p>
+                <a href="#kontakt">
+                    <span data-i18n="learnMore">Mehr erfahren</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3 data-i18n="service2Title">Ausbildung</h3>
+                <p data-i18n="service2Text">
+                    Wir vermitteln dir anerkannte Ausbildungsplätze in verschiedenen
+                    Berufsfeldern.
+                </p>
+                <a href="#kontakt">
+                    <span data-i18n="learnMore">Mehr erfahren</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+                <h3 data-i18n="service3Title">Prüfungsvorbereitung</h3>
+                <p data-i18n="service3Text">
+                    Gezielte Vorbereitung auf Sprachprüfungen wie z. B. Goethe,
+                    DTZ und Fachprüfungen.
+                </p>
+                <a href="#kontakt">
+                    <span data-i18n="learnMore">Mehr erfahren</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h3 data-i18n="service4Title">Persönliche Beratung</h3>
+                <p data-i18n="service4Text">
+                    Wir beraten dich individuell und finden gemeinsam den besten Weg für dich.
+                </p>
+                <a href="#kontakt">
+                    <span data-i18n="learnMore">Mehr erfahren</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WHY -->
+<section class="why" id="warum">
+    <div class="container why-grid">
+
+        <div>
+            <div class="eyebrow" data-i18n="whyEyebrow">WARUM ALPHADEUTSCH?</div>
+
+            <h2 data-i18n-html="whyTitle">
+                Deine Vorteile <em>auf einen Blick</em>
+            </h2>
+
+            <div class="advantages">
+
+                <div>
+                    <span><i class="fa-solid fa-user-check"></i></span>
+                    <b data-i18n-html="adv1">Persönliche<br>Betreuung</b>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <b data-i18n-html="adv2">Erfahrene<br>Lehrkräfte</b>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-gear"></i></span>
+                    <b data-i18n-html="adv3">Praxisorientierte<br>Vorbereitung</b>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-laptop"></i></span>
+                    <b data-i18n-html="adv4">Moderne<br>Lernmethoden</b>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-handshake"></i></span>
+                    <b data-i18n-html="adv5">Unterstützung<br>bei jedem Schritt</b>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+                    <b data-i18n-html="adv6">Klare Orientierung<br>für die Zukunft</b>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <strong data-count="5000" data-prefix=">" class="stat-prefix">0</strong>
+                <span data-i18n="stat1">Teilnehmer begleitet</span>
+            </div>
+
+            <div class="stat">
+                <strong data-count="95">0</strong>
+                <span data-i18n="stat2">% Zufriedenheit</span>
+            </div>
+
+            <div class="stat">
+                <strong data-count="10" data-prefix=">" class="stat-prefix">0</strong>
+                <span data-i18n="stat3">Jahre Erfahrung</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section class="testimonials section-black" id="bewertungen">
+    <div class="container">
+
+        <div class="eyebrow" data-i18n="reviewsEyebrow">DAS SAGEN UNSERE TEILNEHMER</div>
+
+        <h2 data-i18n-html="reviewsTitle">
+            Echte Erfahrungen.<br><em>Echte Erfolge.</em>
+        </h2>
+
+        <div class="reviews">
+
+            <article class="review">
+                <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="stars">★★★★★</div>
+                <p data-i18n="review1Text">
+                    „Bei ALPHADEUTSCH habe ich nicht nur Deutsch gelernt, sondern auch
+                    einen neuen Ausbildungsplatz gefunden. Die Betreuung ist einfach klasse!“
+                </p>
+                <strong>Fatima E.</strong>
+                <small data-i18n="review1Role">Teilnehmerin – Ausbildung</small>
+            </article>
+
+            <article class="review">
+                <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="stars">★★★★★</div>
+                <p data-i18n="review2Text">
+                    „Die Lehrer sind sehr engagiert und die Atmosphäre ist super freundlich.
+                    Ich habe mich von Anfang an gut aufgehoben gefühlt.“
+                </p>
+                <strong>Youssef A.</strong>
+                <small data-i18n="review2Role">Teilnehmer – Deutschkurs</small>
+            </article>
+
+            <article class="review">
+                <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="stars">★★★★★</div>
+                <p data-i18n="review3Text">
+                    „Professionell, freundlich und sehr organisiert.
+                    Ich kann ALPHADEUTSCH nur weiterempfehlen!“
+                </p>
+                <strong>Amina B.</strong>
+                <small data-i18n="review3Role">Auszubildende – Kauffrau</small>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section" id="kontakt">
+    <div class="container contact-grid">
+
+        <div class="location">
+            <div class="eyebrow" data-i18n="locationEyebrow">UNSER STANDORT</div>
+            <h2 data-i18n="locationTitle">Besuche uns</h2>
+
+            <div class="location-details">
+
+                <p>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <b data-i18n="addressName">ALPHADEUTSCH Bildungszentrum</b><br>
+                    LOT PRESTIGIA CHAMPS DE COURSE<br>
+                    ETG 7 BUREAU 63, FES, Marokko
+                </p>
+
+                <p>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    +49 15751002965
+                </p>
+
+                <p>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    Alphaseutsch2026@gmail.com
+                </p>
+
+                <p>
+                    <span><i class="fa-regular fa-clock"></i></span>
+                    <span data-i18n="hours">Lu – Sa: 08:00 – 21:00 Uhr</span>
+                </p>
+
+            </div>
+
+            <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&destination=34.0378864%2C-5.0080081"  target="_blank"  rel="noopener noreferrer"  class="btn btn-primary">
+                <i class="fa-solid fa-map"></i>
+                <span data-i18n="route">Route planen</span>
+            </a>
+        </div>
+
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps?q=34.0378864,-5.0080081&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+
+
+        <div class="form-wrap">
+            <div class="eyebrow" data-i18n="contactEyebrow">KONTAKT</div>
+
+            <h2 data-i18n-html="contactTitle">
+                Du hast Fragen?<br>
+                <em>Wir helfen dir gerne.</em>
+            </h2>
+
+            <form id="contactForm">
+
+                <div class="form-row">
+                    <input type="text" name="vorname" required
+                           data-i18n-placeholder="firstName"
+                           placeholder="Vorname *">
+
+                    <input type="text" name="nachname" required
+                           data-i18n-placeholder="lastName"
+                           placeholder="Nachname *">
+                </div>
+
+                <div class="form-row">
+                    <input type="email" name="email" required
+                           data-i18n-placeholder="emailPlaceholder"
+                           placeholder="E-Mail *">
+
+                    <input type="tel" name="telefon"
+                           data-i18n-placeholder="phonePlaceholder"
+                           placeholder="Telefon">
+                </div>
+
+                <textarea name="nachricht" required
+                          data-i18n-placeholder="messagePlaceholder"
+                          placeholder="Nachricht *"></textarea>
+
+                <label class="consent">
+                    <input type="checkbox" required>
+                    <span data-i18n="consent">
+                        Ich akzeptiere die Datenschutzerklärung.
+                    </span>
+                </label>
+
+                <button class="btn btn-gold" type="submit">
+                    <span data-i18n="submit">Anfrage senden</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+    <img src="assets/logo.jpeg" alt="ALPHADEUTSCH">
+    <p data-i18n="footerTagline">BILDUNG • AUSBILDUNG • ZUKUNFT</p>
+
+    <div class="footer-socials">
+
+        <a href="https://www.instagram.com/alpha_schule?stkn=aGpyazVlemp5cm50"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@alpha.deutsch5?_r=1&_t=ZN-99l6lnmyrV0"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61584391017421"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+    </div>
+</div>
+
+        <div class="footer-nav">
+            <a href="#start" data-i18n="navStart">Startseite</a>
+            <a href="#ueber-uns" data-i18n="navAbout">Über uns</a>
+            <a href="#angebote" data-i18n="navOffers">Was wir machen</a>
+            <a href="#warum" data-i18n="navWhy">Warum wir</a>
+            <a href="#bewertungen" data-i18n="navReviews">Bewertungen</a>
+            <a href="#kontakt" data-i18n="navContact">Kontakt</a>
+        </div>
+
+        <div class="footer-legal">
+            <a href="#" data-i18n="imprint">Impressum</a>
+            <a href="#" data-i18n="privacy">Datenschutz</a>
+        </div>
+
+    </div>
+
+    <div class="container copyright">
+        <span data-i18n="copyright">© {year} ALPHADEUTSCH. Alle Rechte vorbehalten.</span>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
